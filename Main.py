@@ -7,15 +7,17 @@ def clampValueToRange(value, low, high) :
         return int(value)
 
 def returnColor(line) :
-    result = []
-    for i in range(0, 5, 2) :
-        result.append(line[i])
+    result = line.split()
+    for i in range(len(result)) :
+       result[i] = int(result[i])
+    result = result[:3]
     return result
 
 def returnLocation(line) :
-    result = []
-    for i in range(6, len(line), 2) :
-        result.append(line[i])
+    result = line.split()
+    for i in range(len(result)) :
+       result[i] = int(result[i])
+    result = result[3:]
     return result
 
 def locationValid(x, width, y, height) :
