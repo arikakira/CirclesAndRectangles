@@ -132,8 +132,9 @@ def yourPictureFunction():
     addRectangleToList(10, 25, 50, 80, convertPixel([0,255,0]), pixels)   # left rectangle
     addRectangleToList(10, 120, 80, 70, convertPixel([0,255,0]), pixels) # bottom rectangle
     addRectangleToList(120, 135, 80, 50, convertPixel([0,255,0]), pixels) # right rectangle
-    addCircleToList(40,30,15,convertPixel([111, 230, 178]),pixels)  # blue green
-    addCircleToList(100,40,15,convertPixel([76, 36, 156]),pixels)    # ourple
+    addCircleToList(40, 30, 15, convertPixel([111, 230, 178]), pixels)  # blue green
+    addCircleToList(100, 40, 15, convertPixel([76, 36, 156]), pixels)    # ourple
+    addRectangleToList(35, 45, 25, 35, convertPixel([10, 25, 125]), pixels) # blue rectangle in circle
     insertPixelList(pixels,im1)
     writePPM(im1,"im1.ppm")
 
